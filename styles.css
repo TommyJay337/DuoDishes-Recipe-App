@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #e5b16e;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .menu a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+main {
+    padding: 20px;
+    min-height: 80vh; /* Minimum height */
+}
+
+.welcome {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipe-tile {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.recipe-tile img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures the image covers the tile properly */
+}
+
+.recipe-tile h3 {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.recipe-tile p {
+    padding: 0 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.recipe-tile .recipe-link {
+    display: block;
+    text-align: center;
+    background-color: #e5b16e;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.recipe-tile .recipe-link:hover {
+    background-color: #0056b3;
+}
+
+.add-recipe {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+@media (max-width: 600px) {
+    nav .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .menu a {
+        margin: 5px 0;
+    }
+}

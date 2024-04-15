@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duo Dishes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Duo Dishes</div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="favourites.html">Favorites</a>
+                <a href="planner.html">Meal Planner</a>
+                <a href="add_recipe.html">Add Recipe</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h1>Welcome to Duo Dishes</h1>
+            <p>Find your favorite meals, create new delights, and plan your meals.</p>
+        </section>
+        <section id="recipes">
+            <!-- Content for recipes will go here -->
+        </section>
+        <section id="favorites">
+            <!-- Content for favorites will go here -->
+        </section>
+        <section id="planner">
+            <!-- Content for meal planner will go here -->
+        </section>
+
+        <section class="recipe-grid">
+            <!-- Example of a single recipe tile -->
+            <div class="recipe-tile">
+                <img src="path_to_image.jpg" alt="Recipe Name">
+                <h3>Recipe Name</h3>
+                <p>Short description of the recipe...</p>
+                <a href="link_to_full_recipe.html" class="recipe-link">View Recipe</a>
+            </div>
+            <!-- Repeat the above block for each recipe -->
+        </section>
+
+        <section class="add-recipe">
+            <h2>Add a New Recipe</h2>
+            <form id="recipeForm">
+                <div class="form-group">
+                    <label for="recipeName">Recipe Name:</label>
+                    <input type="text" id="recipeName" name="recipeName" required>
+                </div>
+                <div class="form-group">
+                    <label for="recipeImage">Recipe Image:</label>
+                    <input type="file" id="recipeImage" name="recipeImage" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="ingredients">Ingredients:</label>
+                    <textarea id="ingredients" name="ingredients" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="instructions">Instructions:</label>
+                    <textarea id="instructions" name="instructions" required></textarea>
+                </div>
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
