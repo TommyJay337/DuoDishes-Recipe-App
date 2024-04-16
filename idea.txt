@@ -1,0 +1,13 @@
+App idea: A place for my fiance and I to store add and store our favourite recipes for easy future reference
+
+Front End: Javascript/CSS/HTML
+Back End: Python (MongoDB)
+
+Features:
+    - The user will be able to add a recipe from the recipes page
+    - search bar
+    - scaleable quantities for changes in the # of servings
+    - Filter recipes search on Recipes page
+
+Future Features:
+    - Web crawler where the user enters a recipe link and the program automatically adds the ingredients

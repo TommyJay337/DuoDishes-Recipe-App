@@ -15,8 +15,6 @@
                 <a href="index.html">Home</a>
                 <a href="recipes.html">Recipes</a>
                 <a href="favourites.html">Favorites</a>
-                <a href="planner.html">Meal Planner</a>
-                <a href="add_recipe.html">Add Recipe</a>
             </div>
         </nav>
     </header>
@@ -43,32 +41,25 @@
                 <p>Short description of the recipe...</p>
                 <a href="link_to_full_recipe.html" class="recipe-link">View Recipe</a>
             </div>
-            <!-- Repeat the above block for each recipe -->
+            <div class="recipe-tile">
+                <img src="path_to_image.jpg" alt="Recipe Name">
+                <h3>Recipe Name</h3>
+                <p>Short description of the recipe...</p>
+                <a href="link_to_full_recipe.html" class="recipe-link">View Recipe</a>
+            </div>
+            <div class="recipe-tile">
+                <img src="path_to_image.jpg" alt="Recipe Name">
+                <h3>Recipe Name</h3>
+                <p>Short description of the recipe...</p>
+                <a href="link_to_full_recipe.html" class="recipe-link">View Recipe</a>
+            </div>
+            <div class="recipe-tile">
+                <img src="path_to_image.jpg" alt="Recipe Name">
+                <h3>Recipe Name</h3>
+                <p>Short description of the recipe...</p>
+                <a href="link_to_full_recipe.html" class="recipe-link">View Recipe</a>
+            </div>
         </section>
-
-        <section class="add-recipe">
-            <h2>Add a New Recipe</h2>
-            <form id="recipeForm">
-                <div class="form-group">
-                    <label for="recipeName">Recipe Name:</label>
-                    <input type="text" id="recipeName" name="recipeName" required>
-                </div>
-                <div class="form-group">
-                    <label for="recipeImage">Recipe Image:</label>
-                    <input type="file" id="recipeImage" name="recipeImage" accept="image/*">
-                </div>
-                <div class="form-group">
-                    <label for="ingredients">Ingredients:</label>
-                    <textarea id="ingredients" name="ingredients" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="instructions">Instructions:</label>
-                    <textarea id="instructions" name="instructions" required></textarea>
-                </div>
-                <button type="submit">Add Recipe</button>
-            </form>
-        </section>
-        
     </main>
     <footer>
     </footer>
