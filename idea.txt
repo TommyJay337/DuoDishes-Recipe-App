@@ -11,3 +11,4 @@ Features:
 
 Future Features:
     - Web crawler where the user enters a recipe link and the program automatically adds the ingredients
+    - Estimated macros function
